@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "ckirankumar15/ubuntuwithapache",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "80"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/app/current/php-app",
+      "ContainerDirectory": "/var/www/html"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
